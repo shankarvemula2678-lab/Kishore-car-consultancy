@@ -1,0 +1,372 @@
+Below is the **final premium website code** for **Kishore Automobile**. Save it as **`index.html`** and keep your logo image as **`channels4_profile.jpg`** in the same folder.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kishore Automobile</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050505;
+color:white;
+}
+
+.hero{
+height:100vh;
+background:url("channels4_profile.jpg");
+background-size:cover;
+background-position:center;
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.85);
+}
+
+.content{
+position:relative;
+z-index:2;
+}
+
+.logo{
+width:180px;
+border-radius:50%;
+margin-bottom:20px;
+animation:float 3s infinite alternate;
+}
+
+@keyframes float{
+from{transform:translateY(0);}
+to{transform:translateY(-15px);}
+}
+
+h1{
+font-size:60px;
+color:#c8ff00;
+}
+
+.subtitle{
+font-size:20px;
+margin:20px 0;
+}
+
+.buttons a{
+display:inline-block;
+padding:15px 25px;
+margin:10px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+color:white;
+}
+
+.call{
+background:#007bff;
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+.location{
+background:#ff9800;
+}
+
+section{
+padding:80px 10%;
+}
+
+.title{
+text-align:center;
+font-size:45px;
+margin-bottom:40px;
+color:#c8ff00;
+}
+
+.stats,
+.services,
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:#111;
+padding:30px;
+border-radius:20px;
+text-align:center;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h2{
+color:#c8ff00;
+font-size:40px;
+}
+
+.offer{
+background:linear-gradient(45deg,#00c853,#64dd17);
+padding:40px;
+text-align:center;
+font-size:30px;
+border-radius:20px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:20px;
+}
+
+.review{
+background:#111;
+padding:25px;
+border-radius:20px;
+}
+
+form{
+background:#111;
+padding:40px;
+border-radius:20px;
+}
+
+input,textarea{
+width:100%;
+padding:15px;
+margin:15px 0;
+border:none;
+border-radius:10px;
+background:#1b1b1b;
+color:white;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#c8ff00;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+
+footer{
+background:black;
+padding:40px;
+text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+<div class="overlay"></div>
+
+<div class="content">
+
+<img src="channels4_profile.jpg" class="logo">
+
+<h1>KISHORE AUTOMOBILE</h1>
+
+<p class="subtitle">
+Trusted Car Sales • Park & Sell • Premium Car Wash Services
+</p>
+
+<div class="buttons">
+
+<a href="tel:9492645670" class="call">
+📞 Call Now
+</a>
+
+<a href="https://wa.me/919492645670" class="whatsapp">
+💬 WhatsApp
+</a>
+
+<a href="https://maps.app.goo.gl/hTAeJmU1KExmR9Wx6" class="location">
+📍 Visit Us
+</a>
+
+</div>
+
+</div>
+</div>
+
+<section>
+
+<h2 class="title">Our Achievements</h2>
+
+<div class="stats">
+
+<div class="card">
+<h2>500+</h2>
+Happy Customers
+</div>
+
+<div class="card">
+<h2>350+</h2>
+Cars Sold
+</div>
+
+<div class="card">
+<h2>1500+</h2>
+Car Washes
+</div>
+
+<div class="card">
+<h2>5+</h2>
+Years Experience
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+🚗 Used Car Sales
+</div>
+
+<div class="card">
+🚘 Park & Sell
+</div>
+
+<div class="card">
+🧽 Premium Car Wash
+</div>
+
+<div class="card">
+🔥 Best Deals & Offers
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="offer">
+
+🔥 SPECIAL OFFER 🔥
+
+<br><br>
+
+5 Times Car Wash
+
+<br>
+
+Only ₹1000
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Customer Reviews</h2>
+
+<div class="reviews">
+
+<div class="review">
+⭐⭐⭐⭐⭐<br><br>
+Excellent service and genuine car deals.
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐<br><br>
+Best car wash service and friendly staff.
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐<br><br>
+Highly recommended for used car sales.
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Book a Service</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="tel" placeholder="Phone Number">
+
+<textarea rows="5" placeholder="Enter Your Requirement"></textarea>
+
+<button>
+BOOK NOW
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<h2>KISHORE AUTOMOBILE</h2>
+
+<br>
+
+📞 9492645670
+
+<br><br>
+
+💬 WhatsApp : 9492645670
+
+<br><br>
+
+📍 Google Maps Location Available
+
+<br><br>
+
+© 2025 KISHORE AUTOMOBILE
+
+</footer>
+
+</body>
+</html>
+```
+
+This gives you a **modern premium automobile website** with a dark luxury design, your logo, call and WhatsApp buttons, services, offers, customer reviews, and booking form.
